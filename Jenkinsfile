@@ -1,5 +1,7 @@
 pipeline {
 
+    agent any
+
     parameters {
         string(
             name: 'SERVER_PORT',
