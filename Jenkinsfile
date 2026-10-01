@@ -31,13 +31,13 @@ pipeline {
 
         stage('Dependencies') {
             steps {
-                bat 'npm install'
+                bat '"C:\\Program Files\\nodejs\\npm.cmd" install'
             }
         }
 
         stage('Test APP') {
             steps {
-                bat 'npm test'
+                bat '"C:\\Program Files\\nodejs\\npm.cmd" test'
             }
         }
 
